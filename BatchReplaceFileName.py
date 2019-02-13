@@ -10,12 +10,12 @@ import shutil
 import re
 
 print('Current working directory ',os.getcwd())
-os.chdir('D:/Dropbox/TTI_Projects/Road User Cost/VISSIM PM Peak V14/SB/SB 2025') 
+os.chdir('D:/Dropbox/TTI_Projects/Road User Cost/VISSIM PM Peak V14/SB/SB 2045') 
 print('Current working directory ',os.getcwd())
 # Replace _ to - in a file name 
 #[os.rename(f, f.replace('_', '-')) for f in os.listdir('.') if not f.startswith('.')]
 # Replace the year from 2045 to 2025
-[os.rename(f, f.replace('2045', '2025')) for f in os.listdir('.') if not f.startswith('.')]
+[os.rename(f, f.replace('2025', '2045')) for f in os.listdir('.') if not f.startswith('.')]
 
 #######################################################################################
 #Copying files to a folder

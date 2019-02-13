@@ -49,9 +49,9 @@ import glob
 # Vissim = com.Dispatch("Vissim.Vissim-64.800") # Vissim 8 - 64 bit
 # Vissim = com.Dispatch("Vissim.Vissim-32.900") # Vissim 9 - 32 bit
 Vissim = com.Dispatch("Vissim.Vissim-64.900") # Vissim 9 - 64 bit
+ListFiles=glob.glob('D:/Dropbox/TTI_Projects/Road User Cost/VISSIM AM Peak V14/SB/SB 2045/*.inpx')
 Lfs2=glob.glob('D:/Dropbox/TTI_Projects/Road User Cost/VISSIM AM Peak V14/SB/SB 2025/*.inpx')
-
-ListFiles =Lfs2
+ListFiles =ListFiles+Lfs2
 ## Load a Vissim Network:
 Filename = ListFiles[1]
 

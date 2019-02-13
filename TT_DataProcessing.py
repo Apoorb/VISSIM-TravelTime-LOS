@@ -72,7 +72,7 @@ Findat_NB_69= Findat[Findat["TTSegNm"]=="69_NB"]
 Findat_NB_Spur= Findat[Findat["TTSegNm"]=="Spur_NB"]
 
 # SB IH 69 Plots
-def NB_plots(x1="Sen",y1="SMS",ylim1=(0,65),xlab="",ylab="IH 69 NB Average Speed in 2025",title_AB="IH 69 NB Average Speed in 2025",data1=Findat_NB_69[Findat_NB_69["Year"]==2025],saveNm="NB69_2025.png"):
+def NB_plots(x1="Sen",y1="SMS",ylim1=(0,70),xlab="",ylab="IH 69 NB Average Speed in 2025",title_AB="IH 69 NB Average Speed in 2025",data1=Findat_NB_69[Findat_NB_69["Year"]==2025],saveNm="NB69_2025.png"):
     sns.set(style="whitegrid", color_codes=True)
     sns.palplot(sns.color_palette("Greys"))
     AB_palette= ["white",sns.xkcd_rgb["cool grey"],sns.xkcd_rgb["charcoal grey"]]
@@ -176,7 +176,7 @@ Findat_SB_Spur= Findat[Findat["TTSegNm"]=="Spur_SB"]
 sns.set(style="whitegrid", color_codes=True)
 
 # SB IH 69 Plots
-def SB_plots(x1="Sen",y1="SMS",ylim1=(0,65),xlab="",ylab="IH 69 SB Average Speed in 2025",title_AB="IH 69 SB Average Speed in 2025",data1=Findat_SB_69[Findat_SB_69["Year"]==2025],saveNm="SB69_2025.png"):
+def SB_plots(x1="Sen",y1="SMS",ylim1=(0,70),xlab="",ylab="IH 69 SB Average Speed in 2025",title_AB="IH 69 SB Average Speed in 2025",data1=Findat_SB_69[Findat_SB_69["Year"]==2025],saveNm="SB69_2025.png"):
     sns.set(style="whitegrid", color_codes=True)
     sns.palplot(sns.color_palette("Greys"))
     AB_palette1= ["white",sns.xkcd_rgb["light grey"],sns.xkcd_rgb["cool grey"],sns.xkcd_rgb["charcoal grey"]]
